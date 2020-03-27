@@ -1,8 +1,6 @@
 # Sega Saturn disc matrix font (SSDM)
 <img src="https://github.com/OOQQ/ooqq.me/blob/master/blob/ssdm/ssdm.png" align="center" alt="SSDM">
 
-###### ??GS-9126P-01302-P2KFL?
-
 ---
 
 If you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code on the inner ring
@@ -10,7 +8,7 @@ If you ever have owned a japanese Sega Saturn game, some of the discs come with 
 ### why?
 Due the coronavirus confinement, I had plenty of time to spare and so, I tried to reverse-engineering this code that always intrigued me.
 
-Successfully must add.
+Successfully, must add.
 
 ### how?
 * The code is just a simple array of bits, 64 in size.
