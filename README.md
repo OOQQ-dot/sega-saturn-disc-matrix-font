@@ -3,6 +3,8 @@
 
 ###### ??GS-9126P-01302-P2KFL?
 
+---
+
 If you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code on the inner ring
 
 ### why?
