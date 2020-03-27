@@ -1,6 +1,6 @@
 # Sega Saturn disc matrix font (SSDM)
 <img src="https://github.com/OOQQ/ooqq.me/blob/master/blob/ssdm/ssdm.png" align="center" width="100%" alt="SSDM">
-######??GS-9126P-01302-P2KFL?
+###### ??GS-9126P-01302-P2KFL?
 
 If you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code on the inner ring
 
