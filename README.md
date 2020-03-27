@@ -1,22 +1,28 @@
 # Sega Saturn disc matrix font (SSDM)
 <img src="https://ooqq.me/blob/ssdm/ssdm.png" align="center" width="100%" alt="SSDM">
+###### ??GS-9126P-01302-P2KFL?
 
-if you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code label on the inner ring
+If you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code on the inner ring
 
 ### why?
-due the coronavirus confinement, i had plenty of time to spare and so, tried to reverse-engineering the code, successfully must add
+Due the coronavirus confinement, I had plenty of time to spare and so, I tried to reverse-engineering this code that always intrigued me.
+Successfully must add.
 
 ### how?
-the code is just a simple array of bits, 64 in size, the bottom line of every grid just marks the bottom position for correct orientation and reading, the grid is numbered from 0 to 5 as follows, the code is used to simply encode each game id number, which are all unique
+* The code is just a simple array of bits, 64 in size.
+* The line of every grid marks the bottom position for correct orientation and optical reading by a machine.
+* The grid is numbered from 0 to 5 to adress each bit.
+* The code is used here to simply encode each game id number, which are all unique.
 
-MATRIX GRID
+THE MATRIX GRID
 ```
 5 3 1
 4 2 0
 - - -
 ```
 
-luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a symbol (-), and 4 letters (P, K, G, S). It was easy to decode the format following a binary pattern and placing the known numbers on it
+Luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a symbol (-), and 4 letters (P, K, G, S).
+It was easy to decode the format following a binary pattern and placing the known numbers on it:
 ```
 543210
 110000 0
@@ -31,7 +37,7 @@ luckyly, I had enough games (or samples) to have a clear representation of each 
 111001 9
 ```
 
-A similar pattern was followed for the alphabet, and filling the missing glyphs was easy
+A similar pattern was followed for the alphabet:
 ```
 543210
 000001 A
@@ -62,9 +68,9 @@ A similar pattern was followed for the alphabet, and filling the missing glyphs 
 011010 Z
 ```
 
-The last part was a little bit tricker, the two symbols left that appears on the discs, correlates with a (-) mark, and a filled grid with all the bits 1
+The last part was a little bit trickier. The two symbols left that appears on the discs matches the a (-) character, and a filled grid with all the bits set to 1
 
-so if the 64 character list is true...
+If the 64 character list is true...
 ```
 00 000000
 01 000001 A
@@ -75,14 +81,14 @@ so if the 64 character list is true...
 [...]
 63 111111 used as block separator
 ```
-Then, since the code is following binary, it's obvious to turn to ASCII character set for inspiration, and sure enough:
+And since the code is following binary, it's obvious to turn to the ASCII character set for inspiration, and sure enough:
 ```
 45 101101 - char
 46 101110 . char
 47 101111 / char
 48 110000 0 number
 ```
-Which perfectly fill the gaps, while preserves the known value of the - char, so the resulting table looks like this:
+Which perfectly fills the gaps, while preserving the known value of the - char, so the resulting table looks like this:
 ```
 00 000000 @
 01 000001 A
@@ -149,9 +155,9 @@ Which perfectly fill the gaps, while preserves the known value of the - char, so
 62 111110 >
 63 111111 ? --> used as string delimiter
 ```
-The only quirkness is that the placement of the symbols is somehow arbitrary (it doesn't match ASCII placement, but they do respect the ASCII arrangement), and that the format uses the "full" symbol 63 to mark the beginning and the end of the encoding (surely for optical data reading).
+The only quirk is that the placement of the symbols is somehow arbitrary (it doesn't match ASCII placement, but they do respect the ASCII arrangement), and that the format uses the "full" symbol 63 to mark the beginning and the end of the encoding (surely for optical data reading).
 
-So, the final format for any give Sega Saturn CD is:
+So for any given Sega Saturn CD which contains the encoding:
 ```
 Fighters Megamix 1996
 CD Text:        GS-9126P-01302-P2K
@@ -159,9 +165,9 @@ CD Encoded:   ??GS-9126P-01302-P2KFL?
 ```
 If you have reached this point, you'll probably realize by now, as I did, that the code is not a SEGA idea, but a CD manufacturer idea.
 
-First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA hold the platform.
-Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is totally a optical recognition code, but from 1990's where QR was not even developed.
-And third, because some discs have very diferent marks and number fonts used for engraving the inner cd id number, that reveals multiple CD creation machines or plants or companies.
+* First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA hold the platform.
+* Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is totally a optical recognition code, but from 1990's where QR was not even developed.
+* Third, because some discs have very diferent marks and number fonts used for engraving the inner cd id number, that reveals multiple CD creation machines or plants or companies.
 
 Probably, since this looks very high tech, even compared with cds of the same era, country of origin and destination system, the culprit of this format was the [Taiyo Yuden](https://en.wikipedia.org/wiki/Taiyo_Yuden) company, since it was known for the absolute best CD in the entire industry, but this claim is impossible to prove, and this encoding was not found on any other disc whatsover to this day.
 
