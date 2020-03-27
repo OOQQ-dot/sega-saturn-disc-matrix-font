@@ -12,7 +12,6 @@ Successfully, must add.
 
 ### how?
 * The code is just a simple array of bits, 64 in size.
-* The line of every grid marks the bottom position for correct orientation and optical reading by a machine.
 * The grid is numbered from 0 to 5 to adress each bit.
 * The code is used here to simply encode each game id number, which are all unique.
 
@@ -20,7 +19,7 @@ THE MATRIX GRID
 ```
 5 3 1
 4 2 0
-- - -
+----- optical reading grid placement orientation
 ```
 
 Luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a symbol (-), and 4 letters (P, K, G, S).
