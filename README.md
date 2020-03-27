@@ -174,4 +174,5 @@ Probably, since this looks very high tech, even compared with cds of the same er
 
 you'll also find the [bitfontmaker2 sourceCode](https://github.com/OOQQ/Sega-Saturn-disc-matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
 
-###### made by [OOQQ](https://github.com/OOQQ/)[homepage](https://ooqq.me)
+###### made by [OOQQ](https://github.com/OOQQ/)
+[homepage](https://ooqq.me)
