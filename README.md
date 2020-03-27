@@ -1,5 +1,5 @@
 # Sega Saturn disc matrix font (SSDM)
-<a align="center" href="https://ooqq.me/blob/ssdm"><img width="100%" src="https://ooqq.me/blob/ssdm/ssdm.png" alt="SSDM"></a>
+<img width="100%" src="https://ooqq.me/blob/ssdm/ssdm.png" alt="SSDM">
 
 if you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code label on the inner ring
 
