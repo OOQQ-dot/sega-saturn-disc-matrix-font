@@ -154,8 +154,8 @@ The only quirkness is that the placement of the symbols is somehow arbitrary (it
 So, the final format for any give Sega Saturn CD is:
 ```
 Fighters Megamix 1996
-Plain Text on the CD: GS-9126P-01302-P2K
-Encoded Text ??GS-9126P-01302-P2KFL?
+CD Text:        GS-9126P-01302-P2K
+CD Encoded:   ??GS-9126P-01302-P2KFL?
 ```
 If you have reached this point, you'll probably realize by now, as I did, that the code is not a SEGA idea, but a CD manufacturer idea.
 
