@@ -8,9 +8,9 @@ due the coronavirus confinement, i had plenty of time to spare and so, tried to 
 the code is just a simple array of bits, 64 in size, the bottom line of every grid just marks the bottom position for correct orientation and reading, the grid is numbered from 0 to 5 as follows, the code is used to simply encode each game id number, which are all unique
 
 MATRIX GRID
-```5 3 1
+`5 3 1
 4 2 0
-- - -```
+- - -`
 
 luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a symbol (-), and 4 letters (P, K, G, S). It was easy to decode the format following a binary pattern and placing the known numbers on it
 
