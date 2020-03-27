@@ -9,6 +9,7 @@ If you ever have owned a japanese Sega Saturn game, some of the discs come with 
 
 ### why?
 Due the coronavirus confinement, I had plenty of time to spare and so, I tried to reverse-engineering this code that always intrigued me.
+
 Successfully must add.
 
 ### how?
