@@ -1,5 +1,5 @@
 # Sega Saturn disc matrix font (SSDM)
-<img src="https://github.com/OOQQ/ooqq.me/blob/master/blob/ssdm/ssdm.png" align="center" width="100%" alt="SSDM">
+<img src="https://github.com/OOQQ/ooqq.me/blob/master/blob/ssdm/ssdm.png" align="center" alt="SSDM">
 
 ###### ??GS-9126P-01302-P2KFL?
 
