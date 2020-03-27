@@ -8,13 +8,13 @@ due the coronavirus confinement, i had plenty of time to spare and so, tried to 
 the code is just a simple array of bits, 64 in size, the bottom line of every grid just marks the bottom position for correct orientation and reading, the grid is numbered from 0 to 5 as follows, the code is used to simply encode each game id number, which are all unique
 
 MATRIX GRID
-5 3 1
+```5 3 1
 4 2 0
-- - -
+- - -```
 
 luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a symbol (-), and 4 letters (P, K, G, S). It was easy to decode the format following a binary pattern and placing the known numbers on it
 
-543210
+```543210
 110000 0
 110001 1
 110010 2
@@ -24,11 +24,11 @@ luckyly, I had enough games (or samples) to have a clear representation of each 
 110110 6
 110111 7
 111000 8 (unknown but easy to figure)
-111001 9
+111001 9```
 
 A similar pattern was followed for the alphabet, and filling the missing glyphs was easy
 
-543210
+```543210
 000001 - A
 000010 - B
 000011 - C
@@ -54,7 +54,7 @@ A similar pattern was followed for the alphabet, and filling the missing glyphs 
 010111 - W
 011000 - X
 011001 - Y
-011010 - Z
+011010 - Z```
 
 The last part was a little bit tricker, the two symbols left that appears on the discs, correlates with a (-) mark, and a filled grid with all the bits 1
 
