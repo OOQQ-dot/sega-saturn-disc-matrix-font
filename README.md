@@ -150,11 +150,11 @@ Which perfectly fill the gaps, while preserves the known value of the - char, so
 The only quirkness is that the placement of the symbols is somehow arbitrary (it doesn't match ASCII placement, but they do respect the ASCII arrangement), and that the format uses the "full" symbol 63 to mark the beginning and the end of the encoding (surely for optical data reading).
 
 So, the final format for any give Sega Saturn CD is:
-
+```
 Fighters Megamix 1996
 Plain Text on the CD: GS-9126P-01302-P2K
 Encoded Text ??GS-9126P-01302-P2KFL?
-
+```
 If you have reached this point, you'll probably realize by now, as I did, that the code is not a SEGA idea, but a CD manufacturer idea.
 
 First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA hold the platform.
