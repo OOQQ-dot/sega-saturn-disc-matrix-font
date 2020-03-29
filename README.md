@@ -82,7 +82,7 @@ If the 64 character list is true...
 [...]
 63 111111 - used as string delimiter
 ```
-And since the code is following binary, it's obvious to turn to the ASCII character set for inspiration, and sure enough:
+And since the code is following binary, it's obvious to turn to the [ASCII character set](https://ooqq.me/blob/charTables/) for inspiration, and sure enough:
 ```
 45 101101 - char
 46 101110 . char
