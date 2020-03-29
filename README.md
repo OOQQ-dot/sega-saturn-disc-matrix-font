@@ -167,8 +167,8 @@ CD Encoded:   ??GS-9126P-01302-P2KFL?
 If you have reached this point, you'll probably realize by now, as I did, that the code is not a SEGA idea, but a CD manufacturer idea.
 
 * First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA holds the platform and you needed a license.
-* Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is totally a optical recognition code.
-* Third, because some discs have very diferent marks and number fonts used for engraving the inner cd id number, that reveals multiple CD creation machines or plants or companies.
+* Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is a optical recognition code, completely unnecesary for commercialization.
+* Third, because some discs have very diferent marks and number fonts used for engraving CD, that reveals multiple CD creation machines or plants or companies involved.
 
 Upon further delving into cd making process, I've found that the marks on the CD are part of the [SID](https://www.pentacom.jp/entacom/bitfontmaker2/) from the [IFPI commitee](https://www.ifpi.org/content/library/sid-code-implementation-guide.pdf), so the mastering IFPI L237 that's tied whit the press code of IFPI40XX of this discs correlates to a [JVC](http://wiki.musik-sammler.de/index.php?title=Diskussion:Herstellungsland_(CDs_/_DVDs)) manufacturing plant. The only question that remains is in which machine did they created the masters, since this format never appeared again on any other cd, not even from the same manufacturer, not even same game machine, country of origin, or any other date. So it appears it was an exclusive method for the Sega Saturn software discs.
 
