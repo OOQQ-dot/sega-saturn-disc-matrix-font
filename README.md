@@ -11,18 +11,18 @@ Due the coronavirus confinement, I had plenty of time to spare and so, I tried t
 Successfully, must add.
 
 ### how?
-* The code is just a simple array of bits, 64 in size.
+* The code is just a simple array of bits, 6 bits makes up to 64 different characters.
 * The grid is numbered from 0 to 5 to adress each bit.
-* The code is used here to simply encode each game id number, which are all unique.
+* The code is used to encode each game id number, which are all unique.
 
 THE MATRIX GRID
 ```
 5 3 1
 4 2 0
------ optical reading grid placement orientation
+* * * optical guideline orientation 
 ```
 
-Luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a symbol (-), and 4 letters (P, K, G, S).
+Luckyly, I had enough games (or samples) to have a clear representation of each number (minus number 8), a character (-), and 4 letters (P, K, G, S).
 It was easy to decode the format following a binary pattern and placing the known numbers on it:
 ```
 543210
@@ -74,9 +74,9 @@ The last part was a little bit trickier. The two symbols left that appears on th
 If the 64 character list is true...
 ```
 00 000000
-01 000001 A
+01 000001 A - char
 [...]
-45 101101 - character
+45 101101 - char
 [...]
 48 110000 0 number
 [...]
@@ -91,7 +91,7 @@ And since the code is following binary, it's obvious to turn to the ASCII charac
 ```
 Which perfectly fills the gaps, while preserving the known value of the - char, so the resulting table looks like this:
 ```
-00 000000 @
+00 000000 @ --> probably never to be used
 01 000001 A
 02 000010 B
 03 000011 C
@@ -166,11 +166,11 @@ CD Encoded:   ??GS-9126P-01302-P2KFL?
 ```
 If you have reached this point, you'll probably realize by now, as I did, that the code is not a SEGA idea, but a CD manufacturer idea.
 
-* First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA hold the platform.
-* Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is totally a optical recognition code, but from 1990's where QR was not even developed.
+* First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA hold the platform and you need a license.
+* Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is totally a optical recognition code.
 * Third, because some discs have very diferent marks and number fonts used for engraving the inner cd id number, that reveals multiple CD creation machines or plants or companies.
 
-Probably, since this looks very high tech, even compared with cds of the same era, country of origin and destination system, the culprit of this format was the [Taiyo Yuden](https://en.wikipedia.org/wiki/Taiyo_Yuden) company, since it was known for the absolute best CD in the entire industry, but this claim is impossible to prove, and this encoding was not found on any other disc whatsover to this day.
+Upon further delving into cd making process, I've found that the marks on the CD are part of SID of the IFPF world commitee, so the SID of this particular discs, all correlates to JVC mastering CD creation plant (not duplication) of Japan. The only question that remains is which machine did they used to create the master discs, since the format never appeared again on any other cd, not even same game machine, country of origin, or any other date.
 
 you'll also find the [bitfontmaker2 sourceCode](https://github.com/OOQQ/Sega-Saturn-disc-matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
 
