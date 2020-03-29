@@ -1,4 +1,4 @@
-# Sega Saturn disc matrix font (SSDM)
+# Sega Saturn Disc Matrix font (SSDM)
 <img src="https://github.com/OOQQ/ooqq.me/blob/master/blob/ssdm/ssdm.png" align="center" alt="SSDM">
 
 -----
