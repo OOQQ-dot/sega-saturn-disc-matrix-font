@@ -78,9 +78,9 @@ If the 64 character list is true...
 [...]
 45 101101 - char
 [...]
-48 110000 0 number
+48 110000 - 0 number
 [...]
-63 111111 used as block separator
+63 111111 - used as block separator
 ```
 And since the code is following binary, it's obvious to turn to the ASCII character set for inspiration, and sure enough:
 ```
