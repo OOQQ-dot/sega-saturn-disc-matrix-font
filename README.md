@@ -11,7 +11,7 @@ Due the coronavirus confinement, I had plenty of time to spare and so, I tried t
 Successfully, must add.
 
 ### how?
-* The code is just a simple array of bits, 6 bits makes up to 64 different characters.
+* The code is just a simple array of bits, 6 bits creates up to 64 different characters.
 * The grid is numbered from 0 to 5 to adress each bit.
 * The code is used to encode each game id number, which are all unique.
 
