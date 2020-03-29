@@ -173,7 +173,7 @@ If you have reached this point, you'll probably realize by now, as I did, that t
 Upon further delving into CD making process, I've found that the marks on the CD are part of the [SID](https://www.pentacom.jp/entacom/bitfontmaker2/) from the [IFPI commitee](https://www.ifpi.org/content/library/sid-code-implementation-guide.pdf), so the mastering IFPI L237 that's tied whit the press code of IFPI40XX of the discs, correlates to a [JVC](http://wiki.musik-sammler.de/index.php?title=Diskussion:Herstellungsland_(CDs_/_DVDs)) manufacturing plant.
 The only question that remains is in which machine did they created the masters CD, since this format never appeared again on any other CD, not even from the same manufacturer, not even same game machine, country of origin, or any other date. So it appears it was an exclusive method for the Sega Saturn software discs, a format that died as soon as the machine died.
 
-you'll also find the [bitfontmaker2 sourceCode](https://github.com/OOQQ/Sega-Saturn-disc-matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
+you'll also find the [bitfontmaker2 sourceCode](https://github.com/voodoocoltd/Sega-Saturn-Disc-Matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
 
 ###### made by [OOQQ](https://github.com/OOQQ/)
 ###### [homepage](https://ooqq.me)
