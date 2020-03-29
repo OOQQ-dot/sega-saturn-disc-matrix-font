@@ -166,7 +166,7 @@ CD Encoded:   ??GS-9126P-01302-P2KFL?
 ```
 If you have reached this point, you'll probably realize by now, as I did, that the code is not a SEGA idea, but a CD manufacturer idea.
 
-* First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA hold the platform and you need a license.
+* First, because not all Sega Saturn CDs have the encoding, which is odd since SEGA holds the platform and you needed a license.
 * Second, because the format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is totally a optical recognition code.
 * Third, because some discs have very diferent marks and number fonts used for engraving the inner cd id number, that reveals multiple CD creation machines or plants or companies.
 
