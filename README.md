@@ -3,7 +3,7 @@
 
 -----
 
-If you ever have owned a japanese Sega Saturn game, some of the discs come with a fancy code on the inner ring
+If you ever have owned a japanese Sega Saturn game, some of the discs came with a fancy code on the inner ring
 
 ### how?
 * Code is a simple array of 6 bits, it can create up to 64 different characters.
