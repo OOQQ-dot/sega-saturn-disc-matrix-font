@@ -172,4 +172,3 @@ The only question that remains is in which machine did they created the masters 
 You'll also find the [bitfontmaker2 sourceCode](https://github.com/voodoocoltd/Sega-Saturn-Disc-Matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
 
 ###### made by [OOQQ](https://github.com/OOQQ/)
-###### [homepage](https://ooqq.me)
