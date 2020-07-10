@@ -151,7 +151,7 @@ The only quirk is that the placement of symbols is somehow arbitrary (it doesn't
 So for any given Sega Saturn CD which contains the encoding, now we can read everything encoded on it:
 ```
 Fighters Megamix 1996
-CD Text:        GS-9126P-01302-P2K
+CD Plaintext:   GS-9126P-01302-P2K
 CD Encoded:   ??GS-9126P-01302-P2KFL?
 ```
 If you have reached this point, you'll probably realize now that the code is not a SEGA idea, but a CD manufacturer idea because:
