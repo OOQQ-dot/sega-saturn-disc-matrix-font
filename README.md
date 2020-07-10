@@ -148,7 +148,7 @@ Which perfectly fills the gaps, while preserving the known value of the (-) char
 ```
 The only quirk is that the placement of symbols is somehow arbitrary (it doesn't match ASCII placement, but they do respect the ASCII arrangement), and that the format uses the "filled" symbol 63 to mark the beginning and the end of the encoding (for easy optical data reading).
 
-So for any given Sega Saturn CD which contains the encoding:
+So for any given Sega Saturn CD which contains the encoding, now we can read everything encoded on it:
 ```
 Fighters Megamix 1996
 CD Text:        GS-9126P-01302-P2K
