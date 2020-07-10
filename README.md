@@ -3,12 +3,12 @@
 
 -----
 
-If you ever have owned a japanese Sega Saturn game, some of the discs came with a fancy code on the inner ring
+If you ever have owned a japanese Sega Saturn game, some of the CDs came with a fancy code on the inner ring.
 
-### how?
-* Code is a simple array of 6 bits, it can create up to 64 different characters.
-* Grid is clearly numbered from 0 to 5 to adress each bit.
-* Encodes each game ID number which are all unique.
+### Findings
+* Code is an array of 6 bits, it can create up to 64 different arrangements (characters).
+* Array is numbered from 0 to 5 to adress each bit, for easier deciphering.
+* Matrix seems to correlate with each game ID number, which are all unique.
 
 THE MATRIX GRID
 ```
