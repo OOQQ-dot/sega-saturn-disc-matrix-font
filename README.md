@@ -64,20 +64,15 @@ A similar pattern was followed for the alphabet:
 011010 Z
 ```
 
-The last part was a little bit trickier. The two symbols left that appears on the discs matches the a (-) character, and a filled grid with all the bits set to 1
+The last part was a little bit trickier. The two symbols left that appears on the discs matches the (-) character, and a filled grid with all the bits set to 1
 
 ```
-00 000000
-01 000001 (A) char
-[...]
 45 101101 (-) char
 46 101110 unknown
 47 101111 unknown
 48 110000 (0) number
-[...]
-63 111111 (-) used as string delimiter
 ```
-And since the code is following binary, it's obvious to turn to the [ASCII character set](https://ooqq.me/blob/charTables/) for inspiration, and sure enough:
+And since the code is pretty much binary, it's obvious to turn to the [ASCII character set](https://ooqq.me/blob/charTables/) for inspiration, and sure enough:
 ```
 45 101101 (-) char
 46 101110 (.) char
@@ -151,7 +146,7 @@ Which perfectly fills the gaps, while preserving the known value of the (-) char
 62 111110 >
 63 111111 ? --> used as string delimiter
 ```
-The only quirk is that the placement of the symbols is somehow arbitrary (it doesn't match ASCII placement, but they do respect the ASCII arrangement), and that the format uses the "full" symbol 63 to mark the beginning and the end of the encoding (optical data reading).
+The only quirk is that the placement of symbols is somehow arbitrary (it doesn't match ASCII placement, but they do respect the ASCII arrangement), and that the format uses the "filled" symbol 63 to mark the beginning and the end of the encoding (for easy optical data reading).
 
 So for any given Sega Saturn CD which contains the encoding:
 ```
@@ -159,15 +154,15 @@ Fighters Megamix 1996
 CD Text:        GS-9126P-01302-P2K
 CD Encoded:   ??GS-9126P-01302-P2KFL?
 ```
-If you have reached this point, you'll probably realize now that the code is not a SEGA idea, but a CD manufacturer idea.
+If you have reached this point, you'll probably realize now that the code is not a SEGA idea, but a CD manufacturer idea because:
 
-* Not all Sega Saturn CDs have the encoding, which is odd since SEGA holds the platform and you needed a license from SEGA to publish a game.
+* Not all Sega Saturn CDs have the encoding, which is impossible since SEGA holds the platform and you needed a license from SEGA to publish a game.
 * The format adds extra characters at the end of the string (probably manufacturing details like lot job, date, factory number, and more, which is usual for serial numbers), and that the format is a optical recognition code, completely unnecesary for commercialization.
 * Some discs have very diferent marks and number fonts used for CD manufacturing engraving, so it reveals multiple CD creation machines, plants, or companies involved.
 
-Upon further delving into CD making process, marks on the CD are part of the [SID](https://www.pentacom.jp/entacom/bitfontmaker2/) from the [IFPI commitee](https://www.ifpi.org/content/library/sid-code-implementation-guide.pdf), so the mastering IFPI L237 that's tied with the press code of IFPI40XX on the discs, correlates to a Japanese [JVC](http://wiki.musik-sammler.de/index.php?title=Diskussion:Herstellungsland_(CDs_/_DVDs)) manufacturing plant. So it's pretty safe to also assume that any game published by Victor on the Sega Saturn does contain the encoding.
+Upon further delving into CD making process, marks on the CD are part of the [SID](https://support.discogs.com/hc/en-us/articles/360005006654-Database-Guidelines-6-Format#CD_Matrix) from the [IFPI commitee](https://www.ifpi.org/content/library/sid-code-implementation-guide.pdf), so the mastering IFPI L237 that's tied with the press code of IFPI40XX on the Sega Saturn CDs, correlates to a Japanese [JVC](http://wiki.musik-sammler.de/index.php?title=Diskussion:Herstellungsland_(CDs_/_DVDs)) manufacturing plant. So it's pretty safe to also assume that any game published by Victor on the Sega Saturn does contain the encoding, as well as any game manufactured on that CD factory.
 
-The only question that remains is in which machine did they created the masters CDs, since this format never appeared again on any other CD, not even from the same manufacturer, not even on the same game machine, country of origin, or any other date. So it appears it was an exclusive method for the Sega Saturn software discs, a format that died as soon as the machine died.
+The only question that remains is in which machine did they created these masters, since this format never appeared again on any other CD, not even from the same manufacturer, not even on the same game machine, country of origin, or at any other date. So it appears it was an exclusive method for the Sega Saturn software discs, a format that died as soon as the machine that used those discs, died.
 
 You'll also find the [bitfontmaker2 sourceCode](https://github.com/voodoocoltd/Sega-Saturn-Disc-Matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
 
