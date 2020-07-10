@@ -79,7 +79,7 @@ And since the code is pretty much binary, it's obvious to turn to the [ASCII cha
 101111 (/) char
 110000 (0) number
 ```
-Which perfectly fills the gaps, while preserving the known value of the (-) character, so the resulting table looks like this:
+Which perfectly fills the gaps, while preserving the known value of the (-) character, so the resulting table (following ASCII arrangement) looks like this:
 ```
 00 000000 @ --> probably never to be used
 01 000001 A
