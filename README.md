@@ -67,17 +67,17 @@ A similar pattern was followed for the alphabet:
 The last part was a little bit trickier. The two symbols left that appears on the discs matches the (-) character, and a filled grid with all the bits set to 1
 
 ```
-45 101101 (-) char
-46 101110 unknown
-47 101111 unknown
-48 110000 (0) number
+101101 (-) char
+101110 unknown
+101111 unknown
+110000 (0) number
 ```
 And since the code is pretty much binary, it's obvious to turn to the [ASCII character set](https://ooqq.me/blob/charTables/) for inspiration, and sure enough:
 ```
-45 101101 (-) char
-46 101110 (.) char
-47 101111 (/) char
-48 110000 (0) number
+101101 (-) char
+101110 (.) char
+101111 (/) char
+110000 (0) number
 ```
 Which perfectly fills the gaps, while preserving the known value of the (-) character, so the resulting table looks like this:
 ```
