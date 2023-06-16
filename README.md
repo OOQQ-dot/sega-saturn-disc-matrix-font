@@ -1,5 +1,5 @@
 # Sega Saturn Disc Matrix font (SSDM)
-<img src="https://raw.githubusercontent.com/voodoocoltd/Sega-Saturn-Disc-Matrix-font/master/ssdm.png" align="center" alt="SSDM">
+<img src="https://raw.githubusercontent.com/necronomimicon/Sega-Saturn-Disc-Matrix-font/master/ssdm.png" align="center" alt="SSDM">
 
 -----
 
@@ -164,6 +164,6 @@ Upon further delving into CD making process, marks on the CD are part of the [SI
 
 The only question that remains is in which machine did they created these masters, since this format never appeared again on any other CD, not even from the same manufacturer, country of origin, or at any other date. So it appears it was an exclusive method for the Sega Saturn software discs, a format that died as soon as the machine that used those discs, died.
 
-You'll also find the [bitfontmaker2 sourceCode](https://github.com/necronomimicon/Sega-Saturn-Disc-Matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/entacom/bitfontmaker2/) 
+You'll also find the [bitfontmaker2 sourceCode](https://github.com/necronomimicon/Sega-Saturn-Disc-Matrix-font/blob/master/bitFontMaker2Source.txt) used to [generate the font](https://www.pentacom.jp/pentacom/bitfontmaker2/) 
 
 ###### made by [Necronomimicon](https://github.com/necronomimicon/)
